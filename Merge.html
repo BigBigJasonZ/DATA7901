@@ -7460,7 +7460,6 @@ a.anchor-link {
 <span class="n">new_data</span> <span class="o">=</span> <span class="n">df_soup</span><span class="p">[</span><span class="o">~</span><span class="n">df_soup</span><span class="p">[</span><span class="s1">'flight_number'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">df_rest</span><span class="p">[</span><span class="s1">'flight_number'</span><span class="p">])]</span>
 <span class="n">df_all</span> <span class="o">=</span> <span class="n">df_all</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_data</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">df_all</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s2">"all.xlsx"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"数据已合并并保存到 all.xlsx"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
